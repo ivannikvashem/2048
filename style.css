@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background: #bba99b;
+    --first-card-level-color: #ebdfc7;
+    --second-card-level-color: #f4b17a;
+    --third-card-level-color: #f79664;
+    --fourth-card-level-color: #f47c5f;
+    --fifth-card-level-color: #f65f3b;
+    --sixth-card-level-color: #eccd72;
+    --seventh-card-level-color: #eccd72;
+    --eighth-card-level-color: #ebc74f;
+    --ninth-card-level-color: #ebc74f;
+    --tenth-card-level-color: #edc12d;
+    --eleventh-card-level-color: #ef666d;
+    --twelfth-card-level-color: #ed4e59;
+    --thirteenth-card-level-color: #e14338;
+    --fourteenth-card-level-color: #71b4d6;
+    --fifteenth-card-level-color: #5ca0df;
+    --sixteenth-card-level-color: #007bbe;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    color: white;
+}
+
+.playground {
+    background: #857a6f;
+    border-radius: 10px;
+    width: 345px;
+    height: 345px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    color: #ffffff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.card-1 {
+    background: var(--first-card-level-color);
+    color: #7a7066;
+}
+
+.card-2 {
+    background: var(--second-card-level-color);
+}
+
+.card-3 {
+    background: var(--third-card-level-color);
+}
+
+.card-4 {
+    background: var(--fourth-card-level-color);
+}
+
+.card-5 {
+    background: var(--fifth-card-level-color);
+}
+
+.card-6 {
+    background: var(--sixth-card-level-color);
+}
+
+.card-7 {
+    background: var(--seventh-card-level-color);
+}
+
+.card-8 {
+    background: var(--eighth-card-level-color);
+}
+
+.card-9 {
+    background: var(--ninth-card-level-color);
+}
+
+.card-10 {
+    background: var(--tenth-card-level-color);
+}
+
+.card-11 {
+    background: var(--eleventh-card-level-color);
+}
+
+.card-12 {
+    background: var(--twelfth-card-level-color);
+}
+
+.card-13 {
+    background: var(--thirteenth-card-level-color);
+}
+
+.card-14 {
+    background: var(--fourteenth-card-level-color);
+}
+
+.card-15 {
+    background: var(--fifteenth-card-level-color);
+}
+
+.card-16 {
+    background: var(--sixteenth-card-level-color);
+}
