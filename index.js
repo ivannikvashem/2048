@@ -2,21 +2,14 @@ let cards;
 
 var playground = document.getElementById('playground');
 
-var abc = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
+var playgroundMatrix = [
+    [null,null,null,null],
+    [null,null,null,null],
+    [null,null,null,null],
+    [null,null,null,null]
 ];
 
-const getMousePosition = (event) => {
-    const pos = event.currentTarget.getBoundingClientRect();
-    return {
-        x: event.clientX - pos.left,
-        y: event.clientY - pos.top
-    };
-}
-
-function onCardMove() {
+function keyBoardHandler() {
     document.addEventListener('keydown', (e) => {
         if (e.key == 'ArrowUp') {
             cardMoveUp();
@@ -46,8 +39,37 @@ function cardMoveDown() {
 
 }
 
+function getRandomPosition(selected) {
+    minValue;
+    maxValue;
+
+
+    return Math.round(Math.random() * (16 - 0) + 0);
+}
+
 function init() {
     cards = [4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768,65536,131072]
+    var firstValuePosition = Math.round(Math.random() * (16 - 0) + 0);
+    console.log(firstValuePosition);
+
+
+
+    var index = 0;
+    for (var i = 0; i < playgroundMatrix.length; i++) {
+        for (var j = 0; j < playgroundMatrix[i].length; j++) {
+            var value = playgroundMatrix[i][j];
+            // делайте что-то с каждым элементом
+            console.log(index + ' ' + value)
+            //abc[i][j] = value + index; // добавление общего индекса
+
+            if (index == firstValuePosition) {
+                playgroundMatrix[i][j] = 4;
+            }
+
+            index++;
+        }
+    }
+    console.log(playgroundMatrix);
 
     for (let i = 0; i < 16; i++) {
         const cardDiv = document.createElement('div');
@@ -62,4 +84,4 @@ function init() {
 }
 
 init();
-onCardMove();
+keyBoardHandler();
